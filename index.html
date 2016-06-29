@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Sample FireBase</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="src/app.css">
+	</head>
+	<body>
+		<div class="container">
+			<h2>Sample Firebase</h2>
+			<form action="" id="userForm">
+				<p class="input-field">
+					<input id="input-name" type="text" name="name" required>
+					<label for="input-name">Name</label>
+				</p>
+				<p class="input-field">
+					<input id="input-age" type="number" name="age" required>
+					<label for="input-age">Age</label>
+				</p>
+				<button class="btn">Save</button>
+			</form>
+			<table class="highlight">
+				<colgroup>
+					<col width="60%">
+					<col width="20%">
+					<col width="20%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Age</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody id="users-list"></tbody>
+			</table>
+		</div>
+		<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+		<script src="src/app.js"></script>
+	</body>
+</html>
